@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import AVFoundation
 
 struct Notification {
     struct Category {
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
     var count: Int = 1200
     var timerCounting: Bool = false
     var isTimeWorking: Bool = false
+    var bombSoundEffect: AVAudioPlayer?
     let notificationCenter = UNUserNotificationCenter.current()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,7 +113,7 @@ class ViewController: UIViewController {
             timerCounting = true
             startStopButton.setTitle("Stop", for: .normal)
             startStopButton.backgroundColor = UIColor.red
-            timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(timerCounter), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCounter), userInfo: nil, repeats: true)
             titleLabel.text = "Happy Working!"
             isTimeWorking = false
         }
@@ -178,6 +180,15 @@ class ViewController: UIViewController {
             isTimeWorking = true
             titleLabel.text = "Rest your eyes!"
             triggerNotif()
+            let path = Bundle.main.path(forResource: "notif.wav", ofType:nil)!
+            let url = URL(fileURLWithPath: path)
+
+            do {
+                bombSoundEffect = try AVAudioPlayer(contentsOf: url)
+                bombSoundEffect?.play()
+            } catch {
+                // couldn't load file :(
+            }
         } else if (count <= 0 && isTimeWorking) {
             count = 1200
             count = count - 1

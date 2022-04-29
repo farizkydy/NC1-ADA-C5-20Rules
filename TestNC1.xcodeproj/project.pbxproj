@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C639240E2819A7AF00C46BEE /* notif.wav in Resources */ = {isa = PBXBuildFile; fileRef = C639240D2819A7AF00C46BEE /* notif.wav */; };
 		C6986DD0281582B100EC7EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6986DCF281582B100EC7EEE /* AppDelegate.swift */; };
 		C6986DD2281582B100EC7EEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6986DD1281582B100EC7EEE /* SceneDelegate.swift */; };
 		C6986DD4281582B100EC7EEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6986DD3281582B100EC7EEE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C639240D2819A7AF00C46BEE /* notif.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notif.wav; sourceTree = "<group>"; };
 		C6986DCC281582B100EC7EEE /* TestNC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNC1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6986DCF281582B100EC7EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6986DD1281582B100EC7EEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		C6986DCE281582B100EC7EEE /* TestNC1 */ = {
 			isa = PBXGroup;
 			children = (
+				C639240D2819A7AF00C46BEE /* notif.wav */,
 				C6D713F72818F2BA00CCB0D9 /* 26339.mp3 */,
 				C6986DCF281582B100EC7EEE /* AppDelegate.swift */,
 				C6986DD1281582B100EC7EEE /* SceneDelegate.swift */,
@@ -130,6 +133,7 @@
 			files = (
 				C6986DDC281582B300EC7EEE /* LaunchScreen.storyboard in Resources */,
 				C6986DD9281582B300EC7EEE /* Assets.xcassets in Resources */,
+				C639240E2819A7AF00C46BEE /* notif.wav in Resources */,
 				C6D713F82818F2BA00CCB0D9 /* 26339.mp3 in Resources */,
 				C6986DD7281582B100EC7EEE /* Main.storyboard in Resources */,
 			);
